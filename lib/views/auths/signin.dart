@@ -15,42 +15,39 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
-    return Scaffold(body: ResponsiveBuilder(
-      builder: (context, sizingInformation) {
-        if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
-          return Container(
-            height: screenSize.height,
-            width: screenSize.width,
-            decoration: const BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/images/login.jpg"),
-                    fit: BoxFit.cover)),
-            child: ResponsiveForWeb(screenSize: screenSize),
-          );
-        }
-        if (sizingInformation.deviceScreenType == DeviceScreenType.tablet) {
-          return Container(
-            height: screenSize.height,
-            width: screenSize.width,
-            decoration: const BoxDecoration(color: dark),
-            child: ResponsiveForTabletNMobile(screenSize: screenSize),
-          );
-        }
-        if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
-          return Container(
-            height: screenSize.height,
-            width: screenSize.width,
-            decoration: const BoxDecoration(color: dark),
-            child: ResponsiveForTabletNMobile(screenSize: screenSize),
-          );
-        }
-        return Container(
-          height: screenSize.height,
-          width: screenSize.width,
-          decoration: const BoxDecoration(),
-          child: ResponsiveForWeb(screenSize: screenSize),
-        );
-      },
-    ));
+    return Scaffold(
+        backgroundColor: dark,
+        body: ResponsiveBuilder(
+          builder: (context, sizingInformation) {
+            if (sizingInformation.deviceScreenType ==
+                DeviceScreenType.desktop) {
+              return Center(
+                child: ResponsiveForWeb(screenSize: screenSize),
+              );
+            }
+            if (sizingInformation.deviceScreenType == DeviceScreenType.tablet) {
+              return Container(
+                height: screenSize.height,
+                width: screenSize.width,
+                decoration: const BoxDecoration(color: dark),
+                child: ResponsiveForTabletNMobile(screenSize: screenSize),
+              );
+            }
+            if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
+              return Container(
+                height: screenSize.height,
+                width: screenSize.width,
+                decoration: const BoxDecoration(color: dark),
+                child: ResponsiveForTabletNMobile(screenSize: screenSize),
+              );
+            }
+            return Container(
+              height: screenSize.height,
+              width: screenSize.width,
+              decoration: const BoxDecoration(),
+              child: ResponsiveForWeb(screenSize: screenSize),
+            );
+          },
+        ));
   }
 }

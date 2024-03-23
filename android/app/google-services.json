@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1046381169929",
+    "firebase_url": "https://betroom24-7b368-default-rtdb.firebaseio.com",
+    "project_id": "betroom24-7b368",
+    "storage_bucket": "betroom24-7b368.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046381169929:android:c54062d92646cdf8ae17d8",
+        "android_client_info": {
+          "package_name": "com.example.brb_100x"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046381169929-3gbdfvhi6jqbjd7e06ppc5785rdoqmco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSSa1wgp6vx4zVVtTY5FW2u9QtNeW1oCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046381169929-3gbdfvhi6jqbjd7e06ppc5785rdoqmco.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1046381169929-8s0amr6d5ra2dd8dd2jv2kb8b501c8ag.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.brb100x"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

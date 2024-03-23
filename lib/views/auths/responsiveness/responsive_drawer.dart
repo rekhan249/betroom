@@ -16,19 +16,18 @@ class ResponsiveDrawer extends StatefulWidget {
 class _ResponsiveDrawerState extends State<ResponsiveDrawer> {
   @override
   Widget build(BuildContext context) {
-    final screenSize = MediaQuery.of(context).size;
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
         if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
-          return ResponsiveDrawerForWeb(screensize: screenSize);
+          return const ResponsiveDrawerForWeb();
         }
         if (sizingInformation.deviceScreenType == DeviceScreenType.tablet) {
-          return ResponsiveDrawerForTablet(screensize: screenSize);
+          return const ResponsiveDrawerForTablet();
         }
         if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
-          return ResponsiveDrawerForMobile(screensize: screenSize);
+          return const ResponsiveDrawerForMobile();
         }
-        return ResponsiveDrawerForMobile(screensize: screenSize);
+        return const ResponsiveDrawerForMobile();
       },
     );
   }
@@ -39,7 +38,7 @@ class _ResponsiveDrawerState extends State<ResponsiveDrawer> {
    ************************************************* */
 
 class ResponsiveDrawerForMobile extends StatelessWidget {
-  const ResponsiveDrawerForMobile({super.key, required Size screensize});
+  const ResponsiveDrawerForMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -51,10 +50,6 @@ class ResponsiveDrawerForMobile extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Container(
-                  //   margin: const EdgeInsets.all(05),
-                  //   child: SvgPicture.string("assets/images/logo_horizontal.svg"),
-                  // ),
                   Container(
                     padding: const EdgeInsets.all(10),
                     width: double.infinity,
@@ -219,7 +214,7 @@ class ResponsiveDrawerForMobile extends StatelessWidget {
   ============================================ */
 
 class ResponsiveDrawerForWeb extends StatelessWidget {
-  const ResponsiveDrawerForWeb({super.key, required Size screensize});
+  const ResponsiveDrawerForWeb({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -231,10 +226,6 @@ class ResponsiveDrawerForWeb extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Container(
-                  //   margin: const EdgeInsets.all(05),
-                  //   child: SvgPicture.string("assets/images/logo_horizontal.svg"),
-                  // ),
                   Container(
                     padding: const EdgeInsets.all(10),
                     width: double.infinity,
@@ -399,7 +390,7 @@ class ResponsiveDrawerForWeb extends StatelessWidget {
    +++++++++++++++++++++++++++++++++++++++++++  */
 
 class ResponsiveDrawerForTablet extends StatelessWidget {
-  const ResponsiveDrawerForTablet({super.key, required Size screensize});
+  const ResponsiveDrawerForTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -411,10 +402,6 @@ class ResponsiveDrawerForTablet extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Container(
-                  //   margin: const EdgeInsets.all(05),
-                  //   child: SvgPicture.string("assets/images/logo_horizontal.svg"),
-                  // ),
                   Container(
                     padding: const EdgeInsets.all(10),
                     width: double.infinity,

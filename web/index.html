@@ -40,6 +40,25 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDhnliHbm9jlkXPSOT2cNl7iE-861-RnXA",
+      authDomain: "betroom24-7b368.firebaseapp.com",
+      projectId: "betroom24-7b368",
+      storageBucket: "betroom24-7b368.appspot.com",
+      messagingSenderId: "1046381169929",
+      appId: "1:1046381169929:web:4b49fb69f3a75130ae17d8"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js

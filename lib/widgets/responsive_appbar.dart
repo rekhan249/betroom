@@ -25,7 +25,7 @@ class ResponsiveAppBar extends StatelessWidget implements PreferredSizeWidget {
                   height: preferredSize.height,
                   margin: EdgeInsets.only(left: 10.w),
                   decoration: const BoxDecoration(),
-                  child: SvgPicture.asset("assets/images/logo_horizontal.svg",
+                  child: SvgPicture.asset("assets/images/logo.svg",
                       // ignore: deprecated_member_use
                       color: whiteColor)),
               actions: [
@@ -78,7 +78,7 @@ class ResponsiveAppBar extends StatelessWidget implements PreferredSizeWidget {
                   height: preferredSize.height,
                   margin: EdgeInsets.only(left: 10.w),
                   decoration: const BoxDecoration(),
-                  child: SvgPicture.asset("assets/images/logo_horizontal.svg",
+                  child: SvgPicture.asset("assets/images/logo.svg",
                       // ignore: deprecated_member_use
                       color: whiteColor)),
               actions: [
@@ -128,54 +128,13 @@ class ResponsiveAppBar extends StatelessWidget implements PreferredSizeWidget {
           return AppBar(
               backgroundColor: dark,
               leading: Container(
-                  height: preferredSize.height,
                   margin: EdgeInsets.only(left: 10.w),
                   decoration: const BoxDecoration(),
-                  child: SvgPicture.asset("assets/images/logo_horizontal.svg",
+                  child: SvgPicture.asset("assets/images/logo.svg",
+
                       // ignore: deprecated_member_use
                       color: whiteColor)),
-              actions: [
-                Container(
-                  height: preferredSize.height,
-                  decoration: const BoxDecoration(color: Colors.transparent),
-                  child: Row(
-                    children: [
-                      DropdownButton(items: const [], onChanged: (value) {}),
-                      SizedBox(width: 05.w),
-                      SigUpSignInElevatedMain(
-                        icon: Icons.person_add_alt_1,
-                        colorValue: whiteColor,
-                        textData: 'Sign Up',
-                        fontValue: 4.sp,
-                        background: mainGreenColor,
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const SignUpScreen()));
-                        },
-                        iconsize: 4.sp,
-                      ),
-                      SizedBox(width: 05.w),
-                      SigUpSignInElevatedMain(
-                        icon: Icons.login,
-                        colorValue: whiteColor,
-                        textData: 'Sign In',
-                        fontValue: 4.sp,
-                        background: mainGreenColor,
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const SignInScreen()));
-                        },
-                        iconsize: 4.sp,
-                      ),
-                      SizedBox(width: 05.w),
-                    ],
-                  ),
-                ),
-              ]);
+             );
         }
 
         return AppBar(
@@ -184,7 +143,7 @@ class ResponsiveAppBar extends StatelessWidget implements PreferredSizeWidget {
                 height: preferredSize.height,
                 margin: EdgeInsets.only(left: 10.w),
                 decoration: const BoxDecoration(),
-                child: SvgPicture.asset("assets/images/logo_horizontal.svg",
+                child: SvgPicture.asset("assets/images/logo.svg",
                     // ignore: deprecated_member_use
                     height: preferredSize.height,
                     // ignore: deprecated_member_use

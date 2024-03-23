@@ -51,3 +51,83 @@ final kSizeBoxFiftyF = SizedBox(height: 55.h);
 final kSizeBoxSixty = SizedBox(height: 60.h);
 final kSizeBoxSixtyF = SizedBox(height: 65.h);
 final kSizeBoxSeventy = SizedBox(height: 70.h);
+
+const imagesList = [
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-E7PE9Eke47JQq-LljndgMYup4OAC5OCqw&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6G6iERlSvl7H68Ds_dLG__A_qVQwbq-fFDQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQ3Ed2GeF0jWl6daSG046LS6juOPy6AF7vA&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThP3cs7GqyVE1Oo-ct3PGhJNLznKdrDx-NOw&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwt7OVdHCyswgE7A7HB-hTn4JSHAOe6SDpQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX-Vi9-_gdID4ZygQIAlNSaQlOTFNrvWq88w&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOoFvUJpWm4cxpmQHK8bE1yMrwPGDkg09WvzYL3Gmjkwb8hRgiavkZE4fVRtJhXWZHrpc&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4LKw0XmgFzOgtZuuDDJzCiFndfMg9T5d1IDsbVJCWHFBazh1mVeFcQwSlHht7DODQCsg&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvARmOV5syN5Mjs_nzzeC-ra7ULmYZhuq3w&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGJK1IjcsO-WtZwNHk240A3dpZT82YDiaXg&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWF5d4GhBZYf4_vOinBziESfnDg16hNcVGEQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-E7PE9Eke47JQq-LljndgMYup4OAC5OCqw&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwt7OVdHCyswgE7A7HB-hTn4JSHAOe6SDpQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX-Vi9-_gdID4ZygQIAlNSaQlOTFNrvWq88w&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOoFvUJpWm4cxpmQHK8bE1yMrwPGDkg09WvzYL3Gmjkwb8hRgiavkZE4fVRtJhXWZHrpc&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4LKw0XmgFzOgtZuuDDJzCiFndfMg9T5d1IDsbVJCWHFBazh1mVeFcQwSlHht7DODQCsg&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvARmOV5syN5Mjs_nzzeC-ra7ULmYZhuq3w&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGJK1IjcsO-WtZwNHk240A3dpZT82YDiaXg&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDm0GsotaDihaND8gHdswVhstolluIEAXew&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8yFnY2vLpn70keUFM2Nb1Lm5GH8I0kGsHw&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWF5d4GhBZYf4_vOinBziESfnDg16hNcVGEQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-E7PE9Eke47JQq-LljndgMYup4OAC5OCqw&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6G6iERlSvl7H68Ds_dLG__A_qVQwbq-fFDQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGJK1IjcsO-WtZwNHk240A3dpZT82YDiaXg&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDm0GsotaDihaND8gHdswVhstolluIEAXew&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8yFnY2vLpn70keUFM2Nb1Lm5GH8I0kGsHw&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWF5d4GhBZYf4_vOinBziESfnDg16hNcVGEQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-E7PE9Eke47JQq-LljndgMYup4OAC5OCqw&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6G6iERlSvl7H68Ds_dLG__A_qVQwbq-fFDQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX-Vi9-_gdID4ZygQIAlNSaQlOTFNrvWq88w&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOoFvUJpWm4cxpmQHK8bE1yMrwPGDkg09WvzYL3Gmjkwb8hRgiavkZE4fVRtJhXWZHrpc&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4LKw0XmgFzOgtZuuDDJzCiFndfMg9T5d1IDsbVJCWHFBazh1mVeFcQwSlHht7DODQCsg&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvARmOV5syN5Mjs_nzzeC-ra7ULmYZhuq3w&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGJK1IjcsO-WtZwNHk240A3dpZT82YDiaXg&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDm0GsotaDihaND8gHdswVhstolluIEAXew&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8yFnY2vLpn70keUFM2Nb1Lm5GH8I0kGsHw&usqp=CAU",
+];
+
+const promoImagesList = [
+  "assets/images/promoscreen.jpeg",
+  "assets/images/cashback.jpeg",
+  "assets/images/dailycashback.jpeg",
+  "assets/images/slotbattle.png",
+  "assets/images/exclusivebattle.png",
+  "assets/images/extrafreespin.jpeg",
+  "assets/images/weekenddeposit.jpeg"
+];
+const promoTextsList = [
+  "Start your journey.",
+  "Crypto Accepted Here.",
+  "Place your Bets.",
+  "Relax Gaming Slot Battle Tournament.",
+  "Pragmatic Play Slot Battle Tournament.",
+  "Every Wednesday.",
+  "Boost your Weekends."
+];
+const whatsNewImagesList = [
+  "assets/images/barrel.png",
+  "assets/images/bigbite.png",
+  "assets/images/deday.png",
+  "assets/images/devil.png",
+  "assets/images/bestbonus.png",
+  "assets/images/cartfor.png",
+  "assets/images/goodluck.png",
+  "assets/images/megamoney.png",
+  "assets/images/relaxgame.png",
+  "assets/images/saints.png",
+  "assets/images/reto.png",
+];
+const whatsNewTextsList = [
+  "Start your journey.",
+  "Crypto Accepted Here.",
+  "Place your Bets.",
+  "Relax Gaming Slot Battle Tournament.",
+  "Pragmatic Play Slot Battle Tournament.",
+  "Every Wednesday.",
+  "Boost your Weekends."
+];

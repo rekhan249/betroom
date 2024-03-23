@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "betroom24-7b368",
+    "staging": "betroom24-7b368"
+  },
+  "targets": {},
+  "etags": {}
+}

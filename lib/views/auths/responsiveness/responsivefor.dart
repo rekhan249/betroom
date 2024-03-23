@@ -1,5 +1,4 @@
 // ignore_for_file: deprecated_member_use
-
 import 'package:brb_100x/utils/constants.dart';
 import 'package:brb_100x/widgets/email_password.dart';
 import 'package:flutter/material.dart';
@@ -19,20 +18,26 @@ class ResponsiveForWeb extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 10.w),
       height: screenSize.height,
-      width: screenSize.width,
+      width: screenSize.width * 0.4,
       color: dark,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          kSizeBoxTwenty,
+          Align(
+            alignment: Alignment.topRight,
+            child: IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: Icon(Icons.disabled_by_default_outlined,
+                    color: Colors.white.withOpacity(0.4))),
+          ),
           Center(
             child: Container(
               margin: const EdgeInsets.all(05),
-              child: SvgPicture.asset(
-                "assets/images/logo_horizontal.svg",
-                color: whiteColor,
-              ),
+              child:
+                  SvgPicture.asset("assets/images/logo.svg", color: whiteColor),
             ),
           ),
           kSizeBoxTwenty,
@@ -112,20 +117,30 @@ class ResponsiveForTabletNMobile extends StatelessWidget {
 
     return Container(
       margin: const EdgeInsets.all(08),
-      padding: EdgeInsets.symmetric(horizontal: 05.w),
+      padding: EdgeInsets.symmetric(horizontal: 10.w),
       height: screenSize.height,
-      width: screenSize.width,
+      width: screenSize.width * 0.8,
       color: dark,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           kSizeBoxTwenty,
+          Align(
+            alignment: Alignment.topRight,
+            child: IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: Icon(Icons.disabled_by_default_outlined,
+                    color: Colors.white.withOpacity(0.4))),
+          ),
+          kSizeBoxTwenty,
           Center(
             child: Container(
               margin: const EdgeInsets.all(05),
-              child: SvgPicture.asset("assets/images/logo_horizontal.svg",
-                  color: whiteColor),
+              child:
+                  SvgPicture.asset("assets/images/logo.svg", color: whiteColor),
             ),
           ),
           kSizeBoxTwenty,
